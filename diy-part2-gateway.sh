@@ -149,7 +149,7 @@ config_package_add lm-sensors-detect
 # nano 替代 vim
 config_package_add nano
 # upnp
-config_package_add luci-app-upnp
+#config_package_add luci-app-upnp
 # autoreboot
 config_package_add luci-app-autoreboot
 # python3
@@ -177,8 +177,8 @@ config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
 ## luci-app-easytier
-config_package_add luci-app-easytier
-config_package_add easytier
+#config_package_add luci-app-easytier
+#config_package_add easytier
 
 # 镜像生成
 # 修改分区大小
