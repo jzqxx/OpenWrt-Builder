@@ -42,9 +42,8 @@
 ### 添加
 1. 升级 golang 版本（geodata、xray 等依赖高版本 go）。
 2. 更换 argon 主题。
-3. 添加 upnp 服务。
-4. 添加定时重启。
-5. 添加 passwall。
+3. 添加定时重启。
+4. 添加 passwall。
 
 ## 安装
 注意：
