@@ -58,7 +58,7 @@ function clean_packages(){
 sed -i 's/root:::0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.::0:99999:7:::/g' package/base-files/files/etc/shadow
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.123.254/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -155,7 +155,7 @@ config_package_add lm-sensors-detect
 # nano 替代 vim
 config_package_add nano
 # upnp
-config_package_add luci-app-upnp
+#config_package_add luci-app-upnp
 # autoreboot
 #config_package_add luci-app-autoreboot
 # python3
@@ -192,8 +192,8 @@ config_package_del luci-app-passwall_INCLUDE_V2ray_Plugin
 config_package_add luci-app-passwall_INCLUDE_Xray
 config_package_del luci-app-passwall_INCLUDE_Xray_Plugin
 ## luci-app-easytier
-config_package_add luci-app-easytier
-config_package_add easytier
+#config_package_add luci-app-easytier
+#config_package_add easytier
 
 # 镜像生成
 # 修改分区大小

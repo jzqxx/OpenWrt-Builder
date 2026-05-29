@@ -23,7 +23,7 @@
 
 ## 配置
 1. 默认账号 `root`，密码 `password`。
-2. 默认 LAN 口 IP 为 `192.168.3.1`。通过 `/etc/config/network` 修改，重启后生效。
+2. 默认 LAN 口 IP 为 `192.168.123.1`。通过 `/etc/config/network` 修改，重启后生效。
 3. 推荐单独部署高级 DNS 服务。可参考 [NestingDNS](https://github.com/217heidai/NestingDNS)，一款尝试 AdGuardHome、MosDNS、SmartDNS 套娃使用最佳实践的 DNS 服务。
 
 
@@ -42,9 +42,8 @@
 ### 添加
 1. 升级 golang 版本（geodata、xray 等依赖高版本 go）。
 2. 更换 argon 主题。
-3. 添加 upnp 服务。
-4. 添加定时重启。
-5. 添加 passwall。
+3. 添加定时重启。
+4. 添加 passwall。
 
 ## 安装
 注意：
@@ -121,7 +120,7 @@ WEB 页面无法直接创建 OpenWrt LXC 容器，此处需要使用 shell 命�
 
 ## 配置
 1. 默认账号 `root`，密码 `password`。
-2. 默认 LAN 口 IP 为 `192.168.1.5`。通过 `/etc/config/network` 修改，重启后生效。
+2. 默认 LAN 口 IP 为 `192.168.123.254`。通过 `/etc/config/network` 修改，重启后生效。
 3. LAN 口网关修改为主路由 IP 地址。
 4. LAN 口 DNS 修改为主路由 IP 地址。推荐单独部署高级 DNS 服务，将旁路网关的 DNS 指过去即可。可参考 [NestingDNS](https://github.com/217heidai/NestingDNS)，一款尝试 AdGuardHome、MosDNS、SmartDNS 套娃使用最佳实践的 DNS 服务。
 5. 作为旁路网关，需关闭 LAN 口 DHCP，由主路由进行 DHCP。（如开启 DHCP 服务，则变为旁路路由模式）
